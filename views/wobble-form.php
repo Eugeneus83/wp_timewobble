@@ -1,12 +1,13 @@
 <style type="text/css">
-    table.ui-datepicker-calendar td {
-        font-size: .9em !important;
-        line-height: normal !important;;
-        padding: 0px !important;;
-    }
     body {
         margin: auto;
-        width: 1000px;
+        width: 70%;
+    }
+    body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: 100%;
+    }
+    .wp-block-spacer {
+        height: 0px !important;
     }
 </style>
 
@@ -275,6 +276,7 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $gmap_api_key; ?>&libraries=places"></script>
 <script type="text/javascript">
+    <!--
     const timezoneList = <?php echo json_encode($timezones, JSON_UNESCAPED_SLASHES); ?>;
     const timezoneById = <?php echo json_encode($timezoneById, JSON_UNESCAPED_SLASHES); ?>;
     let geocoder;
@@ -717,7 +719,5 @@
         });
     }
 
+    //-->
 </script>
-<?php if (isset($_POST['extract_error'])) {
-    ?><b style="color:red"><?php echo $_POST['extract_error']; ?></b><?php
-} ?>
