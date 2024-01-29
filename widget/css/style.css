@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.wrap{
+	color: #8A8A8A;
+	margin: 10px 20px;
+	box-sizing: border-box;
+	font-style: normal;
+}
+
+.key-block{
+	display: flex;
+	gap: 15px;
+	/* background-image: url("../images/bg.png"); */
+	background-size: cover;
+	box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+	border-radius: 8px;
+	/* max-width: 1000px; */
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 0px;
+}
+
+.settings-block{
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	box-sizing: border-box;
+	max-width: 1300px;
+}
+
+.main-block{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 25px;
+	gap: 15px;
+}
+
+/*Forms style*/
+
+#helpdesk-form-settings {
+	display: block;
+}
+
+.helpdesk-input-text {
+	padding: 10px;
+	background: #FFFFFF;
+	border: 1px solid #D7D7D7;
+	border-radius: 8px;
+	font-style: normal;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 18px;
+	color: #828282;
+	width: 300px;
+}
+
+.helpdesk-input-text:disabled{
+	background: #F2F2F2;
+}

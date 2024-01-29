@@ -1,0 +1,199 @@
+#addLocBtn{
+        border: 1px solid #1677bc;
+        background: #fff;
+        font-size: 16px;
+        color: #1677bc;
+        padding: 10px 15px;
+        border-radius: 8px;
+        line-height: 1;
+				text-transform: capitalize;
+    }
+    #addLocBtn:hover{
+        opacity: 0.8;
+    }
+    #addLocBtn span{
+        display: block;
+    }
+    #addLocBtn svg{
+        width: 100%;    
+        height: 40px;
+    }
+		.bl-cl{
+				color:#1677bc;
+		}
+		a{
+						text-decoration: none;
+				}
+		input{
+				border: 1px solid #ced4da !important;
+				height:38px !important;
+		}
+    .btn,.btn:hover{
+    color: #fff !important;
+    font-weight: bold !important;
+    width: 38px !important;
+    height: 38px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    }
+    .btn:hover{
+    opacity: 0.85 !important;
+    }
+    .invisible{
+    opacity: 0 !important;
+    }
+    .btn-tm-pl{
+    background: #00a59c !important;
+    }
+    .btn-tm-mn{
+    background: #31338c !important;
+    }
+    .text-center{
+    text-align: center !important;
+    }
+    .timer-box{
+    font-family: 'Lato', sans-serif !important;
+    padding: 15px !important;
+    max-width: 480px !important;
+    margin: 0 auto !important;
+    }
+    .input-group-bl-bg{
+        background: #0b71b9;
+        color: #fff;
+        border-color: #0b71b9;
+    }
+    .secondary-txt{
+        font-size: 12px;
+    }
+    #localDate{
+        cursor: pointer;
+    }    
+    table td {
+    font-weight: 300 !important;
+    text-align: center !important;
+    font-size: 48px !important;;
+    line-height: 60% !important;
+    padding: 5px !important;
+    }
+    .reversLocation img{
+    width: 30px;
+    margin-top: 50px;
+    }
+    table tr.txt td {
+    text-align: center !important;
+    font-size: 14px !important;
+    }
+    .wp-image-211 {
+    width: 30px !important;
+    margin-top: -12px !important;
+    }
+    .hrs-img{
+        margin-top: 65px;
+        width: 100%;
+    }
+    #line-border{
+        width: 65%;
+        height: 67px;
+        float: right;
+        border-left: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0 0 0 20px;
+        clear: none;        
+    }
+    .hours-counter{
+        font-size: 10px;
+        color: #333;
+    }
+    button.input-action {
+        border: none;
+        background: transparent;
+        width: auto;
+        line-height: 15px;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #0b71b9;
+        margin-right: -8px;
+        font-weight: bold;        
+    }
+    #input-action{
+        display: flex;
+        background: #1677bc;
+        border-radius: 4px 0 0 4px !important;
+        text-align: center;
+        padding: 18px 10px;       
+    } 
+			fieldset{
+				padding: 0 !important;
+				border: 0px solid silver !important;
+		}
+    @media (max-width: 576px) {
+        table td {
+        font-size: 34px !important;
+        }
+    }
+  
+        .btn,
+        .btn:hover {
+          color: #fff !important;
+          font-weight: bold !important;
+          width: 38px !important;
+          height: 38px !important;
+          border: none !important;
+          border-radius: 5px !important;
+          cursor: pointer !important;
+        }
+        .btn:hover {
+          opacity: 0.85 !important;
+        }
+        .invisible {
+          opacity: 0 !important;
+    }
+    .btn-tm-pl {
+      background: #00a59c !important;
+    }
+    .btn-tm-mn {
+      background: #31338c !important;
+    }
+    .text-center {
+      text-align: center !important;
+    }
+    .timer-box {
+      font-family: 'Lato', sans-serif !important;
+      padding: 5px 15px !important;
+      max-width: 480px !important;
+      margin: 0 auto !important;}
+    table {
+      border: 0px solid #ebebeb !important;
+    }
+    table td {
+      font-weight: 300 !important;
+      text-align: center !important;
+      font-size: 48px !important;
+      line-height: 60% !important;
+      padding: 5px !important;
+    }
+    table tr.txt td {
+      text-align: center !important;
+      font-size: 14px !important;
+    }
+    table tr:nth-child(2n+2) {
+        background: transparent !important;
+    }
+		#prLoc-lb{
+			width:auto;
+		}
+		#cn-lb{
+			margin-left:100px;
+		}
+    @media (max-width: 576px) {
+      table td {
+        font-size: 34px !important;
+      }
+				#prLoc-lb{
+					width:100%;				
+				}
+				#cn-lb{
+					margin-left:0px;				
+				}
+    }
