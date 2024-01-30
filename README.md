@@ -8,19 +8,17 @@ A demo of the frontend functionality is available at https://wp.yevhenlysenko.pr
 
 ## Installation
 
-The easiest way to install TimeWobble is via your WordPress Dashboard:
-
-1. Go to the “Plugins” screen, click “Add New”, and pick plugin zip file.
-2. Click “Install Now” and after that’s complete, click “Activate”.
-3. Go to plugin settings in admin area and save the personal Google Map key.
-
 Manual installation works just as for other WordPress plugins:
 
-1. [Download](https://downloads.wordpress.org/plugin/tablepress.latest-stable.zip) and extract the ZIP file.
-1. Move the folder “time-wobble” to the “wp-content/plugins/” directory of your WordPress installation, e.g. via FTP.
-1. Activate the plugin “TablePress” on the “Plugins” screen of your WordPress Dashboard.
-1. Create and manage tables by going to the “TimeWobble” screen in the admin menu.
-1. To insert a Time Wobble form into a post or page, add a shortcode “[time_wobble]” in the block editor and save the page.
+1. [Download](https://wp.yevhenlysenko.pro/wp-content/plugins/time-wobble/time-wobble.zip) and extract the ZIP file.
+2. Move the folder “time-wobble” to the “wp-content/plugins/” directory of your WordPress installation, e.g. via FTP.
+3. Activate the plugin “TablePress” on the “Plugins” screen of your WordPress Dashboard.
+4. Find "Time Wobble" menu item it will bring you to settings page. Enter and save your Google Map key. 
+5. To insert a Time Wobble form into a post or page, add a shortcode “[time_wobble]” in the block editor and save the page.
+    The next steps are not mandatory but will provide your default location to the plugin
+6. Run "composer install" in command line interface, e.g. via SSH.
+7. [Download](https://wp.yevhenlysenko.pro/wp-content/plugins/time-wobble/mmdb.zip) and extract the ZIP file.
+8. Move the folder “mmdb” folder to the “wp-content/plugins/time-wobble” directory.
 
 **Requirements?**
 
