@@ -32,7 +32,7 @@
 
 <?php
 
-wp_enqueue_style('timewobble-style', plugins_url('../widget/css/style.css?version=' . HELPDESK_PLUGIN_VERSION,__FILE__) );
+wp_enqueue_style('timewobble-style', plugins_url('../widget/css/style.css?version=' . TIMEWOBBLE_PLUGIN_VERSION, __FILE__) );
 wp_enqueue_style('time_wobble-bootstrap', plugins_url('../widget/css/bootstrap.min.css?version=' . TIMEWOBBLE_PLUGIN_VERSION, __FILE__));
 
 ?>
