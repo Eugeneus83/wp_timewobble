@@ -9,6 +9,9 @@
     .wp-block-spacer {
         height: 0px !important;
     }
+    blockquote {
+        all: unset;
+    }
 </style>
 
 <div>
@@ -352,6 +355,7 @@
                     addNewRemoteLocation(savedLocations[i]);
                 }
             } else {
+                <?php if (isset($geo) && $geo) {?>
                 let defaultLocalLocation;
                 if (!timezoneMode) {
                     defaultLocalLocation = "<?php echo $geo->city->name . ', ' . $geo->country->name ?>";
@@ -373,6 +377,7 @@
                     $localLocation.val(timezone);
                     onTimezoneChanged(timezoneId, timezone, $localTimerBox);
                 }
+                <?php } ?>
 
                 $('div.row.location:visible div.timer-box').not('.primary').each(function (index, obj) {
                     setDefaultRemoteLocation(index, $(obj));
@@ -504,9 +509,13 @@
                 let currentLocations = [];
                 $('div.row.location div.timer-box').each(function () {
                     if (!$(this).is(":hidden")) {
-                        currentLocations.push($(this).find('input.location_address').val());
+                        const address = $(this).find('input.location_address').val().trim();
+                        if (address) {
+                            currentLocations.push(address);
+                        }
                     }
                 });
+                console.log(currentLocations);
                 localStorage.setItem('locations', JSON.stringify(currentLocations));
             }
 
