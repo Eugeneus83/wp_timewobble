@@ -29,14 +29,16 @@ add_shortcode('time_wobble', function()
     if (!$gmap_api_key) {
         exit('<h1>Please specify Google Map key</h1>');
     }
-    if (!file_exists(MMDB_PATH)) {
-        exit('<h1>MMDB file not found</h1>');
-    }
 
-    require_once plugin_dir_path(__FILE__). '/classes/geoip2.phar';
-    $reader = new \GeoIp2\Database\Reader(MMDB_PATH);
-    $remoteIP = $_SERVER['REMOTE_ADDR'] != '127.0.0.1'?$_SERVER['REMOTE_ADDR']:'93.79.106.95';
-    $geo = $reader->city($remoteIP);
+    $geo = null;
+    if (file_exists(MMDB_PATH) && $_SERVER['REMOTE_ADDR'] != '127.0.0.1') {
+
+        require plugin_dir_path(__FILE__) . 'vendor/autoload.php';
+
+        $reader = new \GeoIp2\Database\Reader(MMDB_PATH);
+        $remoteIP = $_SERVER['REMOTE_ADDR'] != '127.0.0.1' ? $_SERVER['REMOTE_ADDR'] : '93.79.106.95';
+        $geo = $reader->city($remoteIP);
+    }
 
     $timezones = [];
     $timezoneById = [];
@@ -55,7 +57,7 @@ add_shortcode('time_wobble', function()
     wp_enqueue_style('time_wobble-bootstrap', plugins_url('widget/css/bootstrap.min.css?version=' . TIMEWOBBLE_PLUGIN_VERSION, __FILE__));
     wp_enqueue_style('time_wobble-unwind', plugins_url('widget/css/so-css-siteorigin-unwind.css?version=' . TIMEWOBBLE_PLUGIN_VERSION, __FILE__));
     wp_enqueue_style( 'jquery-ui.css', plugin_dir_url( __FILE__ ) . 'widget/css/jquery-ui.css',[],'1.1','all');
-    wp_enqueue_style('timewobble-style', plugins_url('widget/css/style.css?version=' . HELPDESK_PLUGIN_VERSION,__FILE__));
+    wp_enqueue_style('timewobble-style', plugins_url('widget/css/style.css?version=' . TIMEWOBBLE_PLUGIN_VERSION, __FILE__));
     wp_enqueue_script( 'jquery-ui.js', plugin_dir_url( __FILE__ ) . 'widget/js/jquery-ui.js', array( 'jquery' ), '1.1', 'all');
 
     ob_start();

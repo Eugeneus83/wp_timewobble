@@ -1,0 +1,14 @@
+{
+    "name": "timewobble/timewobble",
+    "type": "project",
+    "description": "The Timewobble wordpess plugin",
+    "authors": [
+        {
+            "name": "Yevhen Lysenko",
+            "email": "parserok24@gmail.com"
+        }
+    ],
+    "require": {
+        "geoip2/geoip2": "^2.0"
+    }
+}
