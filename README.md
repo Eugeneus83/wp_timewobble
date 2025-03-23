@@ -4,13 +4,13 @@ TimeWobble calculates the time for a remote location based on the time of your l
 
 ## Demo
 
-A demo of the frontend functionality is available at https://wp.yevhenlysenko.pro/time-wobble/.
+A demo of the frontend functionality is available at https://wp.yevhenlysenko.org/time-wobble/.
 
 ## Installation
 
 Manual installation works just as for other WordPress plugins:
 
-1. [Download](https://wp.yevhenlysenko.pro/downloads/time-wobble.zip) and extract the ZIP file.
+1. [Download](https://wp.yevhenlysenko.org/downloads/time-wobble.zip) and extract the ZIP file.
 2. Move the folder “time-wobble” to the “wp-content/plugins/” directory of your WordPress installation, e.g. via FTP.
 3. Activate the plugin “Time Wobble” on the “Plugins” screen of your WordPress Dashboard.
 4. Find "Time Wobble" menu item it will bring you to settings page. Enter and save your Google Map key. 
@@ -18,7 +18,7 @@ Manual installation works just as for other WordPress plugins:
 
 ### The next steps are not mandatory but will provide your default location to the plugin    
 6. Run "composer install" in command line interface, e.g. via SSH.
-7. [Download](https://wp.yevhenlysenko.pro/downloads/mmdb.zip) and extract the ZIP file.
+7. [Download](https://wp.yevhenlysenko.org/downloads/mmdb.zip) and extract the ZIP file.
 8. Move the folder “mmdb” folder to the “wp-content/plugins/time-wobble” directory.
 
 **Requirements?**
